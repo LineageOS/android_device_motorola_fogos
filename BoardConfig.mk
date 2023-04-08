@@ -11,6 +11,13 @@ include device/motorola/sm6375-common/BoardConfigCommon.mk
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := fogos
 
+# HIDL
+ODM_MANIFEST_SKUS += b d dn n
+ODM_MANIFEST_B_FILES := $(DEVICE_PATH)/sku/manifest_b.xml
+ODM_MANIFEST_D_FILES := $(DEVICE_PATH)/sku/manifest_d.xml
+ODM_MANIFEST_DN_FILES := $(DEVICE_PATH)/sku/manifest_dn.xml
+ODM_MANIFEST_N_FILES := $(DEVICE_PATH)/sku/manifest_n.xml
+
 # Kernel
 BOARD_KERNEL_CMDLINE += androidboot.hab.product=fogos
 TARGET_KERNEL_CONFIG += vendor/ext_config/moto-holi-fogos.config
