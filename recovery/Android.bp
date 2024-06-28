@@ -4,8 +4,8 @@
 //
 
 prebuilt_etc {
-    name: "init.recovery.xpeng.rc",
-    src: "etc/init.recovery.xpeng.rc",
+    name: "init.recovery.fogos.rc",
+    src: "etc/init.recovery.fogos.rc",
     sub_dir: "init",
     recovery: true,
 }

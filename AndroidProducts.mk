@@ -4,4 +4,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_xpeng.mk
+    $(LOCAL_DIR)/lineage_fogos.mk

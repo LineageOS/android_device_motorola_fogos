@@ -4,6 +4,6 @@
 //
 
 runtime_resource_overlay {
-    name: "SystemUIResXpeng",
+    name: "SystemUIResFogos",
     vendor: true,
 }

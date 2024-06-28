@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#define LOG_TAG "android.hardware.lights-service.xpeng"
+#define LOG_TAG "android.hardware.lights-service.fogos"
 
 #include "Lights.h"
 #include <android-base/file.h>

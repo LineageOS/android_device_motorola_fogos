@@ -8,21 +8,21 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 TARGET_SUPPORTS_OMX_SERVICE := false
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from xpeng device
-$(call inherit-product, device/motorola/xpeng/device.mk)
+# Inherit from fogos device
+$(call inherit-product, device/motorola/fogos/device.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_xpeng
-PRODUCT_DEVICE := xpeng
+PRODUCT_NAME := lineage_fogos
+PRODUCT_DEVICE := fogos
 PRODUCT_MANUFACTURER := motorola
 PRODUCT_BRAND := motorola
-PRODUCT_MODEL := moto g200 5G
+PRODUCT_MODEL := moto g34 5G
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="xpeng_g-user 12 S1RXS32.50-13-25 5fb68-c44485 release-keys" \
-    BuildFingerprint=motorola/xpeng_g/xpeng:12/S1RXS32.50-13-25/5fb68-c44485:user/release-keys \
-    DeviceProduct=xpeng_retail
+    BuildDesc="fogos_g-user 14 U1UGS34.23-110-23-4 38326-64efdd release-keys" \
+    BuildFingerprint=motorola/fogos_g/fogos:14/U1UGS34.23-110-23-4/38326-64efdd:user/release-keys \
+    DeviceProduct=fogos_g

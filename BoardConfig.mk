@@ -3,20 +3,20 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/motorola/xpeng
+DEVICE_PATH := device/motorola/fogos
 
-# Inherit from motorola sm7325-common
-include device/motorola/sm7325-common/BoardConfigCommon.mk
+# Inherit from motorola sm6375-common
+include device/motorola/sm6375-common/BoardConfigCommon.mk
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := xpeng
+TARGET_BOOTLOADER_BOARD_NAME := fogos
 
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Kernel
-BOARD_KERNEL_CMDLINE += androidboot.hab.product=xpeng
-TARGET_KERNEL_CONFIG += vendor/lineage_xpeng.config
+BOARD_KERNEL_CMDLINE += androidboot.hab.product=fogos
+TARGET_KERNEL_CONFIG += vendor/lineage_fogos.config
 
 # Kernel Modules
 BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.load))
@@ -44,4 +44,4 @@ BOARD_AVB_ROLLBACK_INDEX := 20
 BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX := 20
 
 # inherit from the proprietary version
-include vendor/motorola/xpeng/BoardConfigVendor.mk
+include vendor/motorola/fogos/BoardConfigVendor.mk
