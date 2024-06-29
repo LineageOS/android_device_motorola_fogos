@@ -6,12 +6,10 @@
 
 from extract_utils.extract import extract_fns_user_type
 from extract_utils.extract_star import extract_star_firmware
-
 from extract_utils.fixups_blob import (
     blob_fixup,
     blob_fixups_user_type,
 )
-
 from extract_utils.fixups_lib import (
     lib_fixups,
     lib_fixups_user_type,
@@ -24,29 +22,17 @@ from extract_utils.main import (
 namespace_imports = [
     'vendor/motorola/sm6375-common',
     'hardware/motorola',
-    'hardware/qcom-caf/sm8350',
-    'hardware/qcom-caf/wlan',
-    'vendor/qcom/opensource/commonsys-intf/display',
-    'vendor/qcom/opensource/commonsys/display',
-    'vendor/qcom/opensource/dataservices',
     'vendor/qcom/opensource/display',
 ]
 
-
-def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
-    return f'{lib}_{partition}' if partition == 'vendor' else None
-
-
 lib_fixups: lib_fixups_user_type = {
     **lib_fixups,
-    (
-        'motorola.hardware.camera.desktop@1.0',
-        'motorola.hardware.camera.desktop@2.0',
-    ): lib_fixup_vendor_suffix,
 }
 
 blob_fixups: blob_fixups_user_type = {
-    ('vendor/bin/STFlashTool', 'vendor/lib64/sensors.moto.so'): blob_fixup()
+    'vendor/lib64/libmot_chi_desktop_helper.so': blob_fixup()
+        .add_needed('libgui_shim_vendor.so'),
+    'vendor/lib64/sensors.moto.so': blob_fixup()
         .add_needed('libbase_shim.so'),
 }  # fmt: skip
 
