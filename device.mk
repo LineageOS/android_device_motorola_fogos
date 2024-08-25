@@ -30,6 +30,7 @@ PRODUCT_PACKAGES += \
     FrameworksResFogosXT2363-8 \
     FrameworksResFogosXT2363-9 \
     LineageSystemUIFogos \
+    ProductFrameworksResFogos \
     SystemUIResFogos \
     WifiResFogos \
     WifiResFogosXT2363-8 \
