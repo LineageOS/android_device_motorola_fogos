@@ -7,25 +7,31 @@
     <!-- Vibrator pattern for feedback about a long screen/key press -->
     <integer-array name="config_longPressVibePattern">
         <item>0</item>
-        <item>67</item>
+        <item>60</item>
     </integer-array>
 
     <!-- Vibrator pattern for feedback about touching a virtual key -->
     <integer-array name="config_virtualKeyVibePattern">
         <item>0</item>
-        <item>67</item>
+        <item>50</item>
     </integer-array>
 
-    <!-- Vibrator pattern for feedback about booting with safe mode enabled -->
-    <integer-array name="config_safeModeEnabledVibePattern">
+    <!-- Vibrator pattern for feedback when selecting an hour/minute tick of a Clock -->
+    <integer-array name="config_clockTickVibePattern">
         <item>0</item>
-        <item>0</item>
-        <item>94</item>
+        <item>40</item>
     </integer-array>
 
-    <!-- Note: This setting is deprecated, please use
-    config_screenBrightnessSettingMinimumFloat instead -->
-    <integer name="config_screenBrightnessSettingMinimum">2</integer>
+    <!-- Minimum screen brightness setting allowed by power manager.
+         -2 is invalid so setting will resort to int value specified above.
+         Set this to 0.0 to allow screen to go to minimal brightness.
+         The user is forbidden from setting the brightness below this level. -->
+    <item name="config_screenBrightnessSettingMinimumFloat" type="dimen">0.00784313</item>
+
+    <!-- Default screen brightness setting set.
+         -2 is invalid so setting will resort to int value specified above.
+         Must be in the range specified by minimum and maximum. -->
+    <item name="config_screenBrightnessSettingDefaultFloat" type="dimen">0.4509804</item>
 
     <!-- Stability requirements in milliseconds for accepting a new brightness level.  This is used
          for debouncing the light sensor.  Different constants are used to debounce the light sensor
@@ -38,7 +44,7 @@
     <!-- Screen brightness used to dim the screen when the user activity
          timeout expires.  May be less than the minimum allowed brightness setting
          that can be set by the user. -->
-    <integer name="config_screenBrightnessDim">2</integer>
+    <item name="config_screenBrightnessDimFloat" type="dimen">0.00784313</item>
 
     <!-- Array of light sensor lux values to define our levels for auto backlight brightness support.
          The N entries of this array define N + 1 control points as follows:
@@ -99,7 +105,7 @@
          array. The brightness values must be non-negative and non-decreasing. This must be
          overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessDisplayValuesNits">
-        <item>2</item>
+        <item>3</item>
         <item>10</item>
         <item>20</item>
         <item>50</item>
@@ -112,17 +118,17 @@
         <item>180</item>
         <item>180</item>
         <item>180</item>
+        <item>210</item>
+        <item>210</item>
+        <item>210</item>
+        <item>220</item>
         <item>225</item>
-        <item>270</item>
-        <item>300</item>
-        <item>315</item>
-        <item>330</item>
+        <item>225</item>
         <item>350</item>
-        <item>380</item>
-        <item>420</item>
-        <item>450</item>
-        <item>450</item>
-        <item>450</item>
+        <item>400</item>
+        <item>400</item>
+        <item>400</item>
+        <item>400</item>
     </integer-array>
 
     <!-- An array describing the screen's backlight values corresponding to the brightness
@@ -131,24 +137,20 @@
          This array should be equal in size to config_screenBrightnessBacklight. -->
     <integer-array name="config_screenBrightnessBacklight">
         <item>0</item>
-        <item>1</item>
+        <item>2</item>
         <item>6</item>
-        <item>11</item>
-        <item>28</item>
-        <item>40</item>
-        <item>48</item>
-        <item>62</item>
-        <item>74</item>
-        <item>85</item>
-        <item>102</item>
-        <item>128</item>
-        <item>153</item>
-        <item>170</item>
-        <item>179</item>
-        <item>187</item>
-        <item>198</item>
-        <item>215</item>
-        <item>238</item>
+        <item>13</item>
+        <item>32</item>
+        <item>45</item>
+        <item>54</item>
+        <item>70</item>
+        <item>83</item>
+        <item>96</item>
+        <item>115</item>
+        <item>134</item>
+        <item>140</item>
+        <item>143</item>
+        <item>223</item>
         <item>255</item>
     </integer-array>
 
@@ -161,7 +163,7 @@
          This array should be equal in size to config_screenBrightnessBacklight -->
     <integer-array name="config_screenBrightnessNits">
         <item>0</item>
-        <item>2</item>
+        <item>3</item>
         <item>10</item>
         <item>20</item>
         <item>50</item>
@@ -171,15 +173,11 @@
         <item>130</item>
         <item>150</item>
         <item>180</item>
+        <item>210</item>
+        <item>220</item>
         <item>225</item>
-        <item>270</item>
-        <item>300</item>
-        <item>315</item>
-        <item>330</item>
         <item>350</item>
-        <item>380</item>
-        <item>420</item>
-        <item>450</item>
+        <item>400</item>
     </integer-array>
 
     <!-- MMS user agent string -->
@@ -258,10 +256,10 @@
     </array>
 
     <array name="config_sfps_sensor_props_0" translatable="false">
-        <item>local:4630946747577212034</item> <!--item>displayId</item-->
-        <item>1080</item> <!--item>sensorLocationX</item-->
-        <item>800</item> <!--item>sensorLocationY</item-->
-        <item>50</item> <!--item>sensorRadius</item-->
+        <item>local:4630946747577212033</item> <!--item>displayId</item-->
+        <item>720</item> <!--item>sensorLocationX</item-->
+        <item>600</item> <!--item>sensorLocationY</item-->
+        <item>200</item> <!--item>sensorRadius</item-->
     </array>
 
     <!-- Indicates whether device has a power button fingerprint sensor. -->
@@ -282,4 +280,8 @@
          rates are available from hardware composer. Only has an effect if the value is
          non-zero. -->
     <integer name="config_defaultPeakRefreshRate">120</integer>
+
+    <!-- Default refresh rate in the zone defined by brightness and ambient thresholds.
+         If non-positive, then the refresh rate is unchanged even if thresholds are configured. -->
+    <integer name="config_defaultRefreshRateInZone">90</integer>
 </resources>
