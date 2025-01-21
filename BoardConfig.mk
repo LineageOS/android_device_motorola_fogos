@@ -21,7 +21,7 @@ ODM_MANIFEST_N_FILES := $(DEVICE_PATH)/sku/manifest_n.xml
 
 # Kernel
 BOARD_KERNEL_CMDLINE += androidboot.hab.product=fogos
-TARGET_KERNEL_CONFIG += vendor/ext_config/moto-holi-fogos.config
+TARGET_KERNEL_CONFIG += vendor/fogos_defconfig
 
 # Kernel Modules
 BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.load))
