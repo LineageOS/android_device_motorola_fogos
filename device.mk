@@ -64,10 +64,6 @@ PRODUCT_PACKAGES += \
     init.recovery.fogos.rc \
     load_touch.sh.recovery
 
-# Lineage Touch
-PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.fogos
-
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.lights-service.fogos
