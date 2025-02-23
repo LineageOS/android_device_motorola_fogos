@@ -26,7 +26,6 @@ $(call inherit-product, device/motorola/sm6375-common/common.mk)
 # Overlays
 PRODUCT_PACKAGES += \
     FrameworksResFogos \
-    LineagePlatformFogos \
     LineageSystemUIFogos \
     SystemUIResFogos \
     WifiResFogos
@@ -62,10 +61,6 @@ $(foreach f,$(wildcard $(LOCAL_PATH)/rootdir/bin/*.sh),\
 PRODUCT_PACKAGES += \
     init.recovery.fogos.rc \
     load_touch.sh.recovery
-
-# Lights
-PRODUCT_PACKAGES += \
-    android.hardware.lights-service.fogos
 
 # NFC
 PRODUCT_PACKAGES += \
