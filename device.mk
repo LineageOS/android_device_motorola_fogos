@@ -46,9 +46,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml
 
 # Fingerprint
-PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.fogos
-
 $(foreach f,$(wildcard $(LOCAL_PATH)/configs/idc/*.idc),\
         $(eval PRODUCT_COPY_FILES += $(f):$(TARGET_COPY_OUT_VENDOR)/usr/idc/$(notdir $f)))
 $(foreach f,$(wildcard $(LOCAL_PATH)/configs/keylayout/*.kl),\
