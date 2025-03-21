@@ -63,5 +63,3 @@ mmi-smbcharger-iio.ko
 fm_ctrl.ko
 chipone_tddi_v2_mmi.ko
 ilitek_v3_mmi.ko
-moto_mm.ko
-moto_swap.ko

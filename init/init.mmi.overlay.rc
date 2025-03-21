@@ -98,7 +98,6 @@ on boot && property:ro.vendor.mot.gki.path=5.4-gki
 on late-init
     insmod /vendor/lib/modules/${ro.vendor.mot.gki.path}/qpnp_adaptive_charge.ko
     insmod /vendor/lib/modules/${ro.vendor.mot.gki.path}/mmi-smbcharger-iio.ko
-    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules/${ro.vendor.mot.gki.path} moto_mm moto_swap
 
 on early-boot
     # Add for egis fingerprint
