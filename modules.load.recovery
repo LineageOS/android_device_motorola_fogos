@@ -1,9 +1,7 @@
-utags.ko
-mmi_relay.ko
 mmi_info.ko
 mmi_annotate.ko
 sensors_class.ko
-qpnp_adaptive_charge.ko
-ilitek_v3_mmi.ko
-mmi_sys_temp.ko
+exfat.ko
 mmi-smbcharger-iio.ko
+chipone_tddi_v2_mmi.ko
+ilitek_v3_mmi.ko
