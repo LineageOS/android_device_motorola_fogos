@@ -26,7 +26,6 @@ PRODUCT_PACKAGES += \
     FrameworksResDevice \
     FrameworksResDeviceXT2363-8 \
     FrameworksResDeviceXT2363-9 \
-    LineageSystemUIDevice \
     ProductFrameworksResDevice \
     SystemUIResDevice \
     WifiResDevice \
@@ -71,9 +70,6 @@ $(foreach DEVICE_SKU, $(DEVICE_SKUS), \
     $(LOCAL_PATH)/permissions/unavail.android.hardware.nfc.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_$(DEVICE_SKU)/unavail.android.hardware.nfc.xml)
 
 # Sensors
-PRODUCT_PACKAGES += \
-    sensors.fogos
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
 
