@@ -266,10 +266,6 @@ product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND/HotwordEnrollmentXGoog
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
 system_ext/framework/com.android.hotwordenrollment.common.util.jar
 
-# NFC
-vendor/etc/init/android.hardware.nfc@1.2-service.sec.rc
-vendor/etc/init/init.nfc.sec.rc
-
 # NFC - configs
 vendor/etc/libnfc-sec-nci.conf
 vendor/etc/libnfc-sec-vendor.conf
