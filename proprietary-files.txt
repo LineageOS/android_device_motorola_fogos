@@ -19,6 +19,11 @@ vendor/etc/acdbdata/nn_ns_models/fai__2.6.3_0.0__3.0.0_0.0__eai_1.36_enpu2.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.7.4_0.0__3.0.0_0.0__eai_1.10_enpu1.pmd
 vendor/etc/acdbdata/nn_vad_models/fai_3.0.0_0.0_eai_1.00.pmd
 
+# Audio configs
+vendor/etc/ap_gain.bin
+vendor/etc/ap_gain_mmul.bin
+vendor/etc/audio_ext_spkr.conf
+
 # Audio firmware
 vendor/firmware/fs1815.fsm
 
