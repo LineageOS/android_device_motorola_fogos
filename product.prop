@@ -1,3 +1,8 @@
+# Audio
+ro.audio.feature.hi_res.supported=true
+ro.audio.lvacfs.enable=true
+ro.audio.monitorWindowRotation=true
+
 # e-SIM
 masterclear.allow_retain_esim_profiles_after_fdr=true
 ro.telephony.esim_slot_id=1
