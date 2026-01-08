@@ -16,6 +16,24 @@
       "message": "You might want to explain better what this fixes and/or link bug tracker issues in commit msg.",
       "revId": "b7076f5bed9a3d403f1e3d17e354833f705dd964",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d37644aa_f5aeb799",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34240
+      },
+      "writtenOn": "2026-01-08T16:55:59Z",
+      "side": 1,
+      "message": "https://gitlab.com/LineageOS/issues/android/-/issues/9343\nhttps://gitlab.com/LineageOS/issues/android/-/issues/9000\n\nThese are a few of the issues. Sometimes mic doesn\u0027t work unless you switch to speaker mode. Volume control is broken as well for VoIP (earpiece only).",
+      "parentUuid": "a255027a_d7dde44c",
+      "revId": "b7076f5bed9a3d403f1e3d17e354833f705dd964",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
