@@ -51,6 +51,24 @@
       "message": "Seems like both fogos and fogo have the issue\n\nhttps://gitlab.com/LineageOS/issues/android/-/issues/9112#note_2982216490",
       "revId": "b7076f5bed9a3d403f1e3d17e354833f705dd964",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ce34d184_5b3b0796",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2026-01-09T14:18:27Z",
+      "side": 1,
+      "message": "bangkk also doesn\u0027t have it, not sure if it\u0027s affected",
+      "parentUuid": "10005577_9c24e079",
+      "revId": "b7076f5bed9a3d403f1e3d17e354833f705dd964",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
