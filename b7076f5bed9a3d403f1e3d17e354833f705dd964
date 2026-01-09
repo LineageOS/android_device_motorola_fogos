@@ -105,6 +105,24 @@
       "parentUuid": "f355c335_84e8dcf9",
       "revId": "b7076f5bed9a3d403f1e3d17e354833f705dd964",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a9d40f05_86dd6001",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34240
+      },
+      "writtenOn": "2026-01-09T14:57:51Z",
+      "side": 1,
+      "message": "Yes. What confuses me is bangkk\u0027s implementation doesn\u0027t have the entry and it works. fogos needed that entry to work.",
+      "parentUuid": "7839ae85_82e1244e",
+      "revId": "b7076f5bed9a3d403f1e3d17e354833f705dd964",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
