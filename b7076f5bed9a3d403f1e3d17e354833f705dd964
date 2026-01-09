@@ -69,6 +69,24 @@
       "parentUuid": "10005577_9c24e079",
       "revId": "b7076f5bed9a3d403f1e3d17e354833f705dd964",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f355c335_84e8dcf9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34240
+      },
+      "writtenOn": "2026-01-09T14:38:14Z",
+      "side": 1,
+      "message": "I checked with bangkk users and confirmed it to be unaffected. rhodep is fine as well. So I guess its just fogo and fogos.",
+      "parentUuid": "ce34d184_5b3b0796",
+      "revId": "b7076f5bed9a3d403f1e3d17e354833f705dd964",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
