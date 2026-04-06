@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "89f87a09_f2289322",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19979
+      },
+      "writtenOn": "2026-04-06T22:02:45Z",
+      "side": 1,
+      "message": "Maybe this should be moved into hardware/motorola.",
+      "revId": "af4d7ec6ca4ec20c67b3eab3aa3ca9d1335bc123",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
