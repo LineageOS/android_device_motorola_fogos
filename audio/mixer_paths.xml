@@ -4040,5 +4040,8 @@
 
     <path name="voice-tx">
     </path>
-
+    
+    <path name="dmic-nn">
+      <path name="handset-dmic-endfire" />
+    </path>
 </mixer>
