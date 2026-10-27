@@ -43,6 +43,8 @@ vendor/lib64/libBST3DDNS.so
 vendor/lib64/libBSTHDRDETECT.so
 vendor/lib64/libBSTMultiExpoGainHDR.so
 vendor/lib64/libBSTNodeUtils.so
+vendor/lib64/libAncFaceDetect.so
+vendor/lib64/libancbase_fd.so
 vendor/lib64/libaidenoiser.so
 vendor/lib64/libaidenoiserv2.so
 vendor/lib64/libarcsoft_chi_utils.so
@@ -172,6 +174,7 @@ vendor/etc/camera/mot_engine_config.bin
 vendor/etc/camera/vidhance.lic
 vendor/etc/camera/vidhance_calibration
 vendor/etc/camera/vidhance_calibration_2rd
+vendor/etc/tetras/portrait_repair_composite.model
 
 # Camera - feature2
 vendor/lib64/com.qti.feature2.anchorsync.so
