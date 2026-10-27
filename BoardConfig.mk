@@ -11,6 +11,9 @@ include device/motorola/sm6375-common/BoardConfigCommon.mk
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := fogos
 
+# Display
+TARGET_SCREEN_DENSITY := 280
+
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 ODM_MANIFEST_SKUS += b d dn n
