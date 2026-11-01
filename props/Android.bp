@@ -6,11 +6,13 @@
 prebuilt_etc {
     name: "hardware.sku.XT2363-8.prop",
     src: "hardware.sku.XT2363-8.prop",
+    sub_dir: "props",
     product_specific: true,
 }
 
 prebuilt_etc {
     name: "hardware.sku.XT2363-9.prop",
     src: "hardware.sku.XT2363-9.prop",
+    sub_dir: "props",
     product_specific: true,
 }
