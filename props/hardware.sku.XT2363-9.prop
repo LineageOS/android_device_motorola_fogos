@@ -1,5 +1,10 @@
+ro.product.system.model=moto g45 5G
+ro.product.system_dlkm.model=moto g45 5G
+ro.product.system_ext.model=moto g45 5G
 ro.product.model=moto g45 5G
 ro.product.odm.model=moto g45 5G
+ro.product.odm_dlkm.model=moto g45 5G
 ro.product.product.model=moto g45 5G
+ro.product.vendor.model=moto g45 5G
+ro.product.vendor_dlkm.model=moto g45 5G
 ro.vendor.product.display=moto g45 5G
-ro.vendor.product.display.plain_text=moto g45 5G
